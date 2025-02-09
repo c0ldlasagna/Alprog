@@ -15,16 +15,16 @@ NPM   : 2406354045
 
 | #  | Tipe                 | Size (byte) | Range          | Deskripsi |
 |----|----------------------|--------------|--------------------------------|-----------|
-| 1  | `char`              | 1            | -128 hingga 127 | Menyimpan satu karakter dengan kode ASCII. |
-| 2  | `unsigned char`     | 1            | 0 hingga 255                   | Menyimpan satu karakter yang non-negatif dalam 1 byte.|
-| 3  | `short int` (`short`) | 2          | -32768 hingga 32767          | Menyimpan bilangan bulat dalam 2 byte. |
-| 4  | `int`               | 4            | -2147483648 hingga 2147483647 | Menyimpan bilangan bulat dalam 4 byte, dan bisa negatif. |
-| 5  | `unsigned int`      | 4            | 0 hingga 4294967295         | Menyimpan bilangan bulat dalam 4 byte, tanpa bilangan negatif. |
-| 6  | `long int` (`long`) | 4 atau 8     | Tergantung sistem (minimal 32-bit) | Menyimpan bilangan bulat lebih besar dari `int`, biasanya 64-bit di sistem modern. |
-| 7  | `float`             | 4            | 1.2e-38  hingga 3.4e38 | Bilangan floating-point presisi tunggal, digunakan untuk angka desimal dengan presisi terbatas. |
-| 8  | `double`            | 8            | 1.7e-308 hingga 1.7e308 | Bilangan floating-point presisi ganda, lebih akurat dibandingkan `float`. |
-| 9  | `void`              | 0            | N/A                            | Menunjukkan tidak ada tipe, digunakan untuk function yang tidak return nilai apapun. |
-| 10 | `struct`            | Bervariasi   | N/A                            | Struktur data kustom yang menyimpan beberapa variabel dengan tipe yang berbeda. |
+| 1  | `char`              | 1            | -128 hingga 127                     | Menyimpan satu karakter dengan kode ASCII. |
+| 2  | `unsigned char`     | 1            | 0 hingga 255                        | Menyimpan satu karakter yang non-negatif dalam 1 byte.|
+| 3  | `short int` (`short`) | 2          | -32768 hingga 32767                 | Menyimpan bilangan bulat dalam 2 byte. |
+| 4  | `int`               | 4            | -2147483648 hingga 2147483647       | Menyimpan bilangan bulat dalam 4 byte, dan bisa negatif. |
+| 5  | `unsigned int`      | 4            | 0 hingga 4294967295                 | Menyimpan bilangan bulat dalam 4 byte, tanpa bilangan negatif. |
+| 6  | `long int` (`long`) | 4 atau 8     | Tergantung sistem (minimal 32-bit)  | Menyimpan bilangan bulat lebih besar dari `int`, biasanya 64-bit di sistem modern. |
+| 7  | `float`             | 4            | 1.2e-38  hingga 3.4e38              | Bilangan floating-point presisi tunggal, digunakan untuk angka desimal dengan presisi terbatas. |
+| 8  | `double`            | 8            | 1.7e-308 hingga 1.7e308             | Bilangan floating-point presisi ganda, lebih akurat dibandingkan `float`. |
+| 9  | `void`              | 0            | N/A                                 | Menunjukkan tidak ada tipe, digunakan untuk function yang tidak return nilai apapun. |
+| 10 | `struct`            | Bervariasi   | N/A                                 | Struktur data kustom yang menyimpan beberapa variabel dengan tipe yang berbeda. |
 
 
 
