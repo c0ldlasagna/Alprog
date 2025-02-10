@@ -144,7 +144,7 @@ int main() {
 }
 ```
 
-![Output Program](https://media.discordapp.net/attachments/1053248744834994278/1338041886140661790/image.png?ex=67a9a41d&is=67a8529d&hm=3336a1edce496991843fb82a95c33ab56e2cd14bf4d726c309a139222ff64cf9&=&format=webp&quality=lossless&width=1864&height=1108)
+[![Output Soal 1](https://i.postimg.cc/bJ8p5YVH/Screenshot-2025-02-09-135954.png)](https://postimg.cc/R3Pk6mBN)
 
 ### 2. Himpunan A berisi bilangan 1 - 50 (inklusif) yang habis dibagi 3 dan 5. Dengan **WHILE** loop, buatlah program yang akan print semua elemen dari A, tetapi skip 5 bilangan pertama dari A! Cantumkan kode program dan screenshot hasil outputnya! (20 poin)
 
@@ -172,7 +172,7 @@ int main(){
 }
 ```
 
-![Output Program](https://media.discordapp.net/attachments/1053248744834994278/1338160234065035304/image.png?ex=67aa1255&is=67a8c0d5&hm=d0f4b2767f103e2b764d1005d5671d04d394e536cc53021ef756c281f92f9ba0&=&format=webp&quality=lossless&width=1870&height=1108)
+[![Output Soal 2](https://i.postimg.cc/J0zm16Ls/Screenshot-2025-02-09-215058.png)](https://postimg.cc/BLkRpCt3)
 
 ### 3. Alien-Drawing? (20 poin)
 
@@ -279,4 +279,4 @@ int main(){
 }
 ```
 
-![Output Program](https://media.discordapp.net/attachments/1053248744834994278/1338161426979618907/image.png?ex=67aa1372&is=67a8c1f2&hm=94820032b7cc10a9aae85fdfacb6681519cda4009c6933a75533727700e6746c&=&format=webp&quality=lossless&width=1870&height=1108)
+[![Output Soal 3](https://i.postimg.cc/FzCv1yrD/Screenshot-2025-02-09-215530.png)](https://postimg.cc/SY93vzzM)
