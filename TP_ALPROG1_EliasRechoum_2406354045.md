@@ -279,8 +279,6 @@ int main(){
 }
 ```
 
-<<<<<<< HEAD
+
 [![Output Soal 3](https://i.postimg.cc/FzCv1yrD/Screenshot-2025-02-09-215530.png)](https://postimg.cc/SY93vzzM)
 =======
-![Output Program](https://media.discordapp.net/attachments/1053248744834994278/1338161426979618907/image.png?ex=67aa1372&is=67a8c1f2&hm=94820032b7cc10a9aae85fdfacb6681519cda4009c6933a75533727700e6746c&=&format=webp&quality=lossless&width=1870&height=1108)
->>>>>>> a6cc341370addbc19862d62ebc2fc690337b8b8b
