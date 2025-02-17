@@ -13,43 +13,113 @@ NPM   : 2406354045
 
 ---
 
-[your answer here]
+Array merupakan struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat.
+
+Salah satu keuntungan array dibandingkan variable biasa adalah array bisa menyimpan beberapa variabel di dalamnya. Misalkan, sebuah koleksi integer atau string dapat disimpan dalam satu array, dibandingkan di define di beberapa variable.
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- “C Arrays,” GeeksforGeeks, May 14, 2015. <https://www.geeksforgeeks.org/c-arrays>
+
+- “Belajar Pemrograman C #10: Mengenal Struktur Data Array pada C,” Petani Kode, May 18, 2019. <https://www.petanikode.com/c-array>
 
 ---
 
 ### 2. Jelaskan apa yang dimaksud dengan array 1D dan 2D serta jelaskan perbedaan keduanya! (10 poin)
 
-[your answer here]
+Sebuah 1D Array adalah array yang punya satu dimensi.
+
+#### Contohnya:
+
+```c
+int arr[]={1,2,3,4}
+```
+
+Sebuah Array 2D adalah array yang punya dua dimensi, yaitu array di dalam sebuah array. Biasanya digunakan untuk mendefinisikan matrix, dengan setiap array di dalam array merepresentasikan baris dalam bentuk *row-major*, atau kolom dalam bentuk *column-major*.
+
+```c
+int arr[][] = {{1,2,3,4},{5,6,7,8}}
+```
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- “C Arrays,” GeeksforGeeks, May 14, 2015. <https://www.geeksforgeeks.org/c-arrays>
+
+- “Belajar Pemrograman C #10: Mengenal Struktur Data Array pada C,” Petani Kode, May 18, 2019. <https://www.petanikode.com/c-array>
 
 ---
 
 ### 3. Jelaskan apa itu function dan bagaimana cara penggunaannya! (10 poin)
 
-[your answer here]
+A function in C is a set of statements that when called perform some specific tasks. It is the basic building block of a C program that provides modularity and code reusability.
+
+Sebuah function adalah blok kode yang bisa di call untuk dijalankan beberapa kali. Untuk menggunakan fungsi, kita harus deklarasi, didefinisikan terus memanggilnya.
+
+#### Contohnya:
+
+```c
+#include <stdio.h>
+
+void function() //Deklarasi
+{ //Definisi
+    printf("This is a function");
+}
+
+int main(){
+    function(); //Function call
+    return 0;
+}
+```
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- “C - Functions,” GeeksforGeeks, Oct. 09, 2022. <https://www.geeksforgeeks.org/c-functions>
+
+- “C - Functions - Tutorialspoint,” Tutorialspoint.com, 2019. <https://www.tutorialspoint.com/cprogramming/c_functions.htm>
 
 ### 4. Jelaskan perbedaan antara pass-by-value dan pass-by-reference! serta jelaskan juga apa yang dimaksud dengan scope variabel dalam function (10 poin)
 
-[your answer here]
+Pass-by-value adalah cara menggunakan fungsi dengan memasukkan value dari variable ke dalam argument dari sebuah function.
+
+Pass-by-reference adalah cara menggunakan fungsi dengan memasukkan memory address dari sebuah variable ke dalam argument dari sebuah function.
+
+Yang dimaksudkan dari "Variable Scope" adalah fungsi-fungsi yang bisa mengakses sebuah variable. 
+
+Jika variable di definisikan dalam sebuah fungsi, maka hanya fungsi itu akan bisa mengakses variable itu.
+
+Jika variable di definisikan di luar fungsi, maka semua fungsi akan bisa mengakses variable itu.
+
+#### Contohnya:
+
+```c
+#include <stdio.h>
+
+int globalVar = 1; //Ini adalah variable global, yang dapa diakses oleh semua fungsi
+
+void passByReference(int* a) //For a pass-by-reference function, we pass the pointer to a value instead of it's value.
+{
+    printf("This is a pass by reference function. A is %d",*a)// We use the dereference operator (*) to access the value of the pointer.
+}
+
+void passByValue(int a) //Since this is a pass-by-value function, we pass the value directly into the parameters of the function.
+{
+    printf("This is a pass by value function. A is %d",a)
+}
+
+int main(){
+    passByReference(&globalVar); //Since global var is declared outside any functions, any function in the program can access it.
+    passByValue(globalVar);
+    return 0;
+}
+```
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- “Pass By Reference In C,” GeeksforGeeks, Oct. 19, 2023. <https://www.geeksforgeeks.org/pass-by-reference-in-c/>
+
+- bhojas, “Pass by Value in C - Sanfoundry,” Sanfoundry, Feb. 14, 2013. <https://www.sanfoundry.com/c-program-pass-by-value/>
+
+- “Scope rules in C,” GeeksforGeeks, Dec. 30, 2011. <https://www.geeksforgeeks.org/scope-rules-in-c/>
 
 ---
 
