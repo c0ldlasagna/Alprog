@@ -268,7 +268,7 @@ int main(){
 ```
 
 SS Output Program Kalian : 
-![Output of Matrix Multiplication](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%202/matrixmult.png)
+![Output of Matrix Multiplication](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%202/TP/matrixmult.png)
 
 
 
@@ -319,4 +319,4 @@ int main(){
 ```
 
 SS Output Program Kalian : 
-![Output of shifting](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%202/shift.png)
+![Output of shifting](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%202/TP/shift.png)
