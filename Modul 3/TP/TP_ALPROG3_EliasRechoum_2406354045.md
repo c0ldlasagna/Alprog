@@ -195,4 +195,4 @@ int main(){
 
 SS Output Program Kalian :
 
-![Output ASCII Name Counter](image.png)
+![image](https://github.com/user-attachments/assets/134892ae-6585-46b4-8756-60c0d076a94c)
