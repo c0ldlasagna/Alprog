@@ -13,40 +13,75 @@ NPM   : 2406354045
 
 ---
 
-[your answer here]
+Pointer adalah variabel yang menyimpan alamat memori dari variabel lain.
+
+Ada 2 operator penting yang akan kita gunakan dalam konsep pointer, yaitu:
+
+1. Operator *dereference* (*) digunakan untuk mendeklarasikan variabel penunjuk dan mengakses value yang disimpan di alamat memori.
+2. Operator *address* (&) digunakan untuk mengembalikan alamat memori suatu variabel atau untuk mengakses alamat memori suatu variabel ke suatu pointer.
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- “C Pointers,” GeeksforGeeks, Dec. 15, 2016. https://www.geeksforgeeks.org/c-pointers/
 ---
 
 ### 2. Dalam C, kita bisa menjalankan fungsi by reference dan by value. Jelaskan perbedaannya! (10 poin)
 `(Note: Base Case dan Recursive Case)`
 
-[your answer here]
+Pass-by-value adalah cara menggunakan fungsi dengan memasukkan value dari variable ke dalam argument dari sebuah function. Ini tidak memungkinkan fungsi mengganti value dari variable tersebut, karena variable asli tidak dapat diakses langsung.
+
+Pass-by-reference adalah cara menggunakan fungsi dengan memasukkan memory address dari sebuah variable ke dalam argument dari sebuah function. Ini memungkinkan fungsi mengganti value dari variable tersebut, karena variable asli  dapat diakses langsung.
+
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- GeeksForGeeks, “Difference between Call by Value and Call by Reference,” GeeksforGeeks, Dec. 26, 2018. https://www.geeksforgeeks.org/difference-between-call-by-value-and-call-by-reference/
 
 ---
 
 ### 3. Salah satu metode paling umum membuat array dengan size fleksibel/dinamis adalah dengan malloc/calloc. Apakah command-command tersebut? Bagaimana cara pakainya? (15 poin)
 `(Note: Setelah selesai memakai malloc/calloc, memori harus dibebaskan (menggunakan free()). Tidak perlu dijelaskan di jawaban, namun penting untuk diingat`
-[your answer here]
+
+malloc() dan calloc() adalah fungsi untuk mengalokasi memori secara dinamis.
+
+### `malloc(size)`:
+malloc() digunakan untuk mengalokasikan `size` byte memori ke sebuah pointer. `malloc()` tidak menginisialisasikan memori.
+
+#### Cara pakai malloc() untuk mengalokasi memori untuk array integer yang punya 5 item:
+
+```c
+int* arr = (int*)malloc(5*sizeof(int));
+```
+### `calloc(n,size)`
+calloc() digunakan untuk mengalokasikan `size` byte memori ke sebuah pointer. Ia mengambil dua argumen, `n`, yaitu jumlah elemen, dan `size`, yaitu ukuran salah satu elemen tersebut. `calloc()` menginisialisasi memori dengan nilai 0.
+
+#### Cara pakai calloc() untuk mengalokasi memori untuk array integer yang punya 5 item:
+
+```c
+int* arr = (int*)calloc(5,sizeof(int));
+```
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks, “Dynamic memory allocation in C using malloc(), calloc(), free() and realloc(),” GeeksforGeeks, Dec. 13, 2018. https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
 
 ### 4. Bagaimana cara untuk memberikan sebuah array / matrix sebagai argumen dalam fungsi (by reference / pointer)?  (10 poin)
 
-[your answer here]
+Untuk memberikan sebuah array/matrix sebagai argumen ke dalam sebuah fungsi, kita mendeklarasi parameter yang memiliki type pointer atau double pointer sama ukurannya (jika perlu).
+
+#### Contohnya:
+
+```c
+void printArray(int* array,int size){
+    for(int i = 0;i<size;i++){
+        printf("%d",array[i]);
+    }
+}
+```
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
----
+- “C - Pointer to Pointer (Double Pointer),” GeeksforGeeks, Apr. 09, 2017. https://www.geeksforgeeks.org/c-pointer-to-pointer-double-pointer/
 
 ## Programming
 
@@ -195,4 +230,4 @@ int main(){
 
 SS Output Program Kalian :
 
-![image](https://github.com/user-attachments/assets/134892ae-6585-46b4-8756-60c0d076a94c)
+![Output](https://github.com/user-attachments/assets/134892ae-6585-46b4-8756-60c0d076a94c)
