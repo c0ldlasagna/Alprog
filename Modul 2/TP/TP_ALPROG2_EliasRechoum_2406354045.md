@@ -318,5 +318,6 @@ int main(){
 }
 ```
 
-SS Output Program Kalian : 
+SS Output Program Kalian :
+
 ![Output of shifting](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%202/TP/shift.png)
