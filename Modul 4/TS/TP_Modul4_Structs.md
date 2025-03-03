@@ -1,7 +1,3 @@
----
-title: TP_Modul4_Structs
-
----
 # Tugas Pendahuluan Modul 4 - Structs
 
 ```
@@ -66,6 +62,10 @@ printf("%d",orang1Ptr->usia); // Arrow operator
 
 *Nested Struct* adalah sebuah struct yang memiliki struct lain sebagai salah satu anggotanya.
 
+Untuk mengimplementasikan nested struct, deklrasikan sebuah struct sebagai anggota dari struct yang lain.
+
+#### Contohnya
+
 ```c
 #include <stdio.h>
 
@@ -124,7 +124,9 @@ int main() {
 
 ### Referensi:
 
-- Contoh Situs [Online]. Available: https://www.myWebsite.com/ilovedigilab/. [Diakses: 25-Agustus-2024]
+- W3Schools, “C Structures (structs),” www.w3schools.com. <https://www.w3schools.com/c/c_structs.php>
+
+-  GeeksforGeeks, “Structures in C,” GeeksforGeeks, Oct. 12, 2014. <https://www.geeksforgeeks.org/structures-c/>
 
 ### 4. Apakah perbedaan dari metode akses anggota struct lewat titik (.) dibanding dengan panah (->)?  (10 poin)
 
@@ -396,4 +398,4 @@ int main(){
 ```
 
 SS Output Program Kalian :
-![Output Program](https://itsfoss.com/content/images/2023/03/run-c-program-in-linux-with-visual-studio-code.jpg)
+![image](https://github.com/user-attachments/assets/bb23d5cd-b0ee-4629-b6ee-cd87aa3d9718)
