@@ -129,7 +129,7 @@ int main() {
 }
 ```
 
-![alt text](image-2.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/master/Modul%205/image-2.png)
 
 
 ### 2. Buatlah program yang dapat mencari hasil dari (angka_terbesar + angka_terkecil) / 2 menggunakan Queue! Masukkan dulu angka-angka pada Queue agar terisi, kemudian implementasikan fungsi mencari angka_terbesar dan fungsi lain untuk mencari angka_terkecil. Setelah itu, baru output hasil yang sesuai soal. Cantumkan kode program dan screenshot hasil outputnya! (10 poin)
@@ -223,7 +223,7 @@ int main() {
 }
 ```
 
-![alt text](image-1.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/master/Modul%205/image-1.png)
 
 ### 3. Well-Balanced Numbers (35 poin)
 
@@ -290,4 +290,4 @@ int main() {
 }
 ```
 
-![alt text](image.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/master/Modul%205/image.png)
