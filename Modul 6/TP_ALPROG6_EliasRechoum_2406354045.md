@@ -42,7 +42,7 @@ Untuk mencari index nilai `98` dalam array `77 78 83 83 90 98 100`, kita bisa pa
 Binary search bekerja dengan membagi array yang sudah terurut menjadi dua bagian, lalu membandingkan nilai tengah dengan target.
 Jika target lebih kecil, pencarian berlanjut di setengah kiri, jika lebih besar, di setengah kanan. Proses ini terus diulang hingga target ditemukan atau array habis.
 
-![alt text](image.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%206/image.png)
 
 ### Referensi:
 
@@ -95,7 +95,7 @@ int main(){
 ```
 
 SS Output Program Kalian : 
-![alt text](image-1.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%206/image-1.png)
 
 **Analisa** : 
 Kode ini mengimplementasikan algoritma binary search untuk mencari nilai dalam array yang sudah terurut. Fungsi binarySearch menerima tiga parameter: array arr, ukuran array size, dan nilai target yang ingin dicari. Variabel left dan right digunakan untuk menentukan batas pencarian, dengan left diinisialisasi ke indeks pertama dan right ke indeks terakhir. Selama left masih lebih kecil atau sama dengan right, program akan menghitung indeks tengah middle dan membandingkan elemen pada indeks tersebut dengan target. Jika nilainya sama, fungsi langsung mengembalikan indeks tersebut. Jika elemen di middle lebih besar dari target, batas kanan (right) dipindahkan ke kiri (middle - 1), dan jika lebih kecil, batas kiri (left) dipindahkan ke kanan (middle + 1).
