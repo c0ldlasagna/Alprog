@@ -25,9 +25,9 @@ Perbedaan:
 
 Referensi
 
-- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/bubble-sort/>. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/bubble-sort/>. [Diakses: 14-04-2025]
 
-- Programiz [Online]. Available: <https://www.programiz.com/dsa/insertion-sort>. [Diakses: 25-Agustus-2024]
+- Programiz [Online]. Available: <https://www.programiz.com/dsa/insertion-sort>. [Diakses: 14-04-2025]
 
 ---
 
@@ -53,9 +53,9 @@ Perbedaan dengan Bubble dan Insertion Sort:
 
 Referensi:
 
-- Visualgo [Online]. Tersedia di: https://visualgo.net/en/sorting. [Diakses: 25-Agustus-2024]
+- Visualgo [Online]. Available: <https://visualgo.net/en/sorting>. [Diakses: 14-04-2025]
 
-- GeeksforGeeks [Online]. Tersedia di: https://www.geeksforgeeks.org/quick-sort-algorithm/. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/quick-sort-algorithm/>. [Diakses: 14-04-2025]
 
 ---
 
@@ -73,9 +73,9 @@ Keunggulan Heap Sort:
 
 Referensi
 
-- Programiz [Online]. Available: https://www.programiz.com/dsa/heap-sort. [Diakses: 25-Agustus-2024]
+- Programiz [Online]. Available: <https://www.programiz.com/dsa/heap-sort>. [Diakses: 14-04-2025]
 
-- GeeksforGeeks [Online]. Available: https://www.geeksforgeeks.org/heap-sort/. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/heap-sort/>. [Diakses: 14-04-2025]
 
 ---
 
@@ -201,9 +201,9 @@ Output:
 
 #### Referensi
 
-- Visualgo [Online]. Available: https://visualgo.net/en/sorting. [Diakses: 25-Agustus-2024]
+- Visualgo [Online]. Available: <https://visualgo.net/en/sorting>. [Diakses: 14-04-2025]
 
-- GeeksforGeeks [Online]. Available: https://www.geeksforgeeks.org/quick-sort-algorithm/. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/quick-sort-algorithm/>. [Diakses: 14-04-2025]
 
 ---
 
@@ -275,9 +275,9 @@ David 65
 
 #### Referensi
 
-- Visualgo [Online]. Tersedia di: https://visualgo.net/en/sorting. [Diakses: 25-Agustus-2024]
+- Visualgo [Online]. Available: <https://visualgo.net/en/sorting>. [Diakses: 14-04-2025]
 
-- GeeksforGeeks [Online]. Tersedia di: https://www.geeksforgeeks.org/quick-sort-algorithm/. [Diakses: 25-Agustus-2024]
+- GeeksforGeeks [Online]. Available: <https://www.geeksforgeeks.org/quick-sort-algorithm/>. [Diakses: 14-04-2025]
 
 ---
 
