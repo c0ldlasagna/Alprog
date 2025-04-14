@@ -405,4 +405,4 @@ int main(){
 }
 ```
 
-![Output Program](image.png)
+![Output Program](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%207/image.png)
