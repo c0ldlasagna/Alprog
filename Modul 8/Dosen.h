@@ -3,8 +3,8 @@
 
 class Dosen{
     private:
+        std::string name;   
         int id;
-        std::string name;
     public:
     Dosen(const std::string& newName, const int& newId);
     std::string getName() const;

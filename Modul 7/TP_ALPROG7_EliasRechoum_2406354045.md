@@ -1,4 +1,4 @@
-# Tugas Pendahuluan 7 - Sorting
+`# Tugas Pendahuluan 7 - Sorting
 
 ```txt
 Nama  : Elias Rechoum

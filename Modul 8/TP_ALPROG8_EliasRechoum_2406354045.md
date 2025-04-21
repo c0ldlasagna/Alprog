@@ -189,22 +189,205 @@ IPK: 3.71
 
 ---
 
-Nama File 1 :
+Jurusan.h
 
 ```cpp
-copas disini
+#pragma once
+
+enum Jurusan{
+    ELEKTRO,BIOMEDIK,KOMPUTER
+};
 ```
 
-Nama File 2 :
+Dosen.h:
 
 ```cpp
-copas disini
+#pragma once
+#include <string>
+
+class Dosen{
+    private:
+        std::string name;   
+        int id;
+    public:
+    Dosen(const std::string& newName, const int& newId);
+    std::string getName() const;
+    void setName(const std::string& newName) ;
+    int getId() const;
+    void setId(const int& newId);
+};
 ```
 
-Nama File 3 :
+Dosen.cpp :
 
 ```cpp
-copas disini
+#include "Dosen.h"
+#include <iostream>
+
+Dosen::Dosen(const std::string& newName,const int& newId): name(newName), id(newId) {}
+
+std::string Dosen::getName() const{
+    return name;
+}
+
+void Dosen::setName(const std::string& newName){
+    name = newName;
+}
+
+int Dosen::getId() const {
+    return id;
+}
+
+void Dosen::setId(const int& newId){
+    id = newId;
+}
+```
+
+Kelas.h:
+
+```cpp
+
+#pragma once
+#include <string>
+#include "Dosen.h"
+
+class Kelas{
+    private:
+        std::string name;
+        float nilai;
+        int sks;
+        Dosen dosen;
+    public:
+        void showDetail()const;
+        float getNilai()const;
+        void setNilai(const float& newNilai);
+        int getSks()const;
+        void setSks(const int& newSks);
+        std::string getName()const;
+        void setName(const std::string newName);
+        Kelas(const std::string newName,const float newNilai,const int newSks, const Dosen newDosen);
+};
+```
+
+Kelas.cpp:
+```cpp
+#include "Kelas.h"
+#include <iostream>
+#include <format>
+#include <string>
+
+Kelas::Kelas(const std::string newName, const float newNilai, const int newSks, const Dosen newDosen)    : name(newName), nilai(newNilai), sks(newSks), dosen(newDosen) {}
+void Kelas::showDetail() const {
+    std::cout << std::format("Kelas: {}, Nilai {:.2f}, SKS: {}, Dosen: {}", name, nilai, sks, dosen.getName()) << std::endl;
+
+}
+
+float Kelas::getNilai() const {
+    return nilai;
+}
+
+void Kelas::setNilai(const float& newNilai) {
+    nilai = newNilai;
+}
+
+int Kelas::getSks() const {
+    return sks;
+}
+
+void Kelas::setSks(const int& newSks) {
+    sks = newSks;
+}
+
+std::string Kelas::getName() const {
+    return name;
+}
+
+void Kelas::setName(const std::string newName) {
+    name = newName;
+}
+```
+
+Mahasiswa.h:
+
+```cpp
+#pragma once
+#include <string>
+#include <vector>
+#include "Kelas.h"
+#include "Jurusan.h"
+
+class Mahasiswa{
+    private:
+        std::string name;
+        int id;
+        std::vector<Kelas> classes;
+        Jurusan jurusan;
+    public:
+        Mahasiswa(
+            const std::string newName,
+            const int newId,
+            const std::vector<Kelas> newClasses,
+            const Jurusan newJurusan
+        );
+        float getIpk()const;
+        void showDetail()const;
+};
+```
+
+Mahasiswa.cpp:
+
+```cpp
+#include "Mahasiswa.h"
+#include <string>
+#include <format>
+#include <iostream>
+
+Mahasiswa::Mahasiswa(
+    const std::string newName,
+            const int newId,
+            const std::vector<Kelas> newClasses,
+            const Jurusan newJurusan
+): name(newName),id(newId),classes(newClasses),jurusan(newJurusan) {}
+
+float Mahasiswa::getIpk()const{
+    float ipk = 0;
+            int totalSks = 0;
+            for (Kelas k : classes) {
+                ipk += k.getNilai() * k.getSks();
+                totalSks += k.getSks();
+            }
+            ipk /= totalSks;
+            return ipk;
+}
+
+void Mahasiswa::showDetail()const{
+    std::string jurusanStr = (jurusan == ELEKTRO) ? "Teknik Elektro" : (jurusan == BIOMEDIK) ? "Teknik Biomedik" : "Teknik Komputer";
+            std::cout << std::format("Nama: {}, ID: {}, Jurusan {}",name,id,jurusanStr) << std::endl;
+            for (Kelas k : classes) {
+                k.showDetail();
+            }
+            std::cout << std::format("IPK: {:.2f}",getIpk());
+}
+```
+
+main.cpp:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+#include <format>
+#include "Dosen.h"
+#include "Mahasiswa.h"
+#include "Kelas.h"
+
+int main() {
+    Dosen dosenAlprog("Mr. Budi", 10), dosenSisben("Mr. Thomas", 11), dosenMatdis("Ms. Puff", 12), dosenFislis("Ms. Sandy", 13);
+    Kelas alprog("Algoritma Pemrograman", 3.8, 3, dosenAlprog), sisben("Sistem Benam", 3.5, 3, dosenSisben), matdis("Matematika Diskrit", 4, 3, dosenMatdis), fislis("Fisika Listrik", 3.6, 2, dosenFislis);
+    Mahasiswa m("Seorang Mahasiswa", 69420, {alprog, sisben, matdis, fislis}, ELEKTRO);
+    m.showDetail();
+    return 0;
+}
 ```
 
 dst.

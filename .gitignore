@@ -4,3 +4,5 @@
 test/
 .vscode/
 CS/*
+bin/
+build/
