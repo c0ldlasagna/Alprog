@@ -673,5 +673,5 @@ int main() {
 ```
 
 ### SS Output Program Kalian :
-![alt text](image.png)
+![alt text](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%208/image.png)
 
