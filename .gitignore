@@ -6,3 +6,4 @@ test/
 CS/*
 bin/
 build/
+test.*
