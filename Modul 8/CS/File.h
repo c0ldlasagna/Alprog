@@ -1,9 +1,10 @@
+#pragma once
 #include <string>
 
 class File{
     private:
         std::string name;
-        std:: string content;
+        std::string content;
 
     public:
         File(const std::string& newName);

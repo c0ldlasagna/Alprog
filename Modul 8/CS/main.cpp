@@ -5,5 +5,6 @@
 int main(){
     Directory dir("root");
     FileSystemManager fs(dir);
-    fs.run()
+    fs.run();
+    return 0;
 }

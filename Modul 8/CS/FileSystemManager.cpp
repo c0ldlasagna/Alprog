@@ -3,7 +3,7 @@
 #include "Directory.h"
 #include <iostream>
 
-FileSystemManager::FileSystemManager(Directory dir): directory(dir) {};
+FileSystemManager::FileSystemManager(Directory& dir): directory(dir) {};
 
 void FileSystemManager::run(){
     {
@@ -21,19 +21,12 @@ void FileSystemManager::run(){
             }
             else if (command == "echo")
             {
-                std::string content, name, option;
+                std::string content, name;
+                int mode;
                 std::cin >> content;
-                std::cin >> option;
-                if (option == ">")
-                {
-                    std::cin >> name;
-                    echo(content, name, 1);
-                }
-                else if (option == ">>")
-                {
-                    std::cin >> name;
-                    echo(content, name, 2);
-                }
+                std::cin >> name;
+                std::cin >> mode;
+                echo(content,name,mode);
             }
             else if (command == "ls")
             {
@@ -66,8 +59,10 @@ void FileSystemManager::echo(const std::string& content, const std::string& name
         if (file.getName() == name) { // Check if the file name matches
             if (mode == 1) { // Overwrite mode
                 file.setContent(content); // Replace the file's content
+                std::cout << file.getContent() << std::endl;
             } else if (mode == 2) { // Append mode
                 file.setContent(file.getContent() + content); // Append to the file's content
+                std::cout << file.getContent() << std::endl;
             }
             return; // Exit the function after modifying the file
         }
@@ -75,15 +70,16 @@ void FileSystemManager::echo(const std::string& content, const std::string& name
     std::cout << "File not found." << '\n'; // If no matching file is found
 }
 
-void FileSystemManager::ls()const{
-    for (const File fileName : directory.getFiles()){
+void FileSystemManager::ls(){
+    for (const File& fileName : directory.getFiles()){
         std::cout << fileName.getName() << '\n';
     }
 }
 
-void FileSystemManager::cat(const std::string name) {
-    for (const File& file : directory.getFiles()) { // Iterate through files in the directory
-        if (file.getName() == name) { // Check if the file name matches
+void FileSystemManager::cat(const std::string& name) {
+    for (File& file : directory.getFiles()) { // Iterate through files in the directory
+        if(file.getName() == name){
+            std::cout << file.getName() << '\n';
             std::cout << file.getContent() << '\n'; // Print the file's content to the terminal
             return; // Exit the function after printing the content
         }
