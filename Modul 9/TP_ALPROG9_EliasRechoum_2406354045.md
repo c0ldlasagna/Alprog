@@ -12,7 +12,7 @@ NPM     : 2406354045
 
 ### Screenshot hasil run dari kedua program yang ada di dasar teori :
 
-![Screenshot program dari Dasar Teori](image-2.png)
+![Screenshot program dari Dasar Teori](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%209/image-2.png)
 
 ---
 
@@ -116,11 +116,11 @@ Langkah-langkah komunikasi:
 
 #### Case berhasil
 
-![Case berhasil](image.png)
+![Case berhasil](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%209/image.png)
 
 #### Case gagal
 
-![Case gagal](image-1.png)
+![Case gagal](https://raw.githubusercontent.com/c0ldlasagna/Alprog/refs/heads/master/Modul%209/image-1.png)
 
 ### Source Code
 
